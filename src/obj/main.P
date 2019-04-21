@@ -1,0 +1,34 @@
+obj/main.o: main.cpp alert.h uint256.h util.h netbase.h serialize.h \
+ allocators.h version.h clientversion.h compat.h checkpoints.h net.h \
+ mruset.h protocol.h addrman.h sync.h threadsafety.h db.h main.h bignum.h \
+ script.h keystore.h crypter.h key.h scrypt.h INTICOINX/INTICOINX.h \
+ INTICOINX/../serialize.h INTICOINX/../bignum.h INTICOINX/../util.h \
+ INTICOINX/Params.h INTICOINX/Coin.h INTICOINX/Commitment.h \
+ INTICOINX/Accumulator.h INTICOINX/AccumulatorProofOfKnowledge.h \
+ INTICOINX/CoinSpend.h INTICOINX/SerialNumberSignatureOfKnowledge.h \
+ INTICOINX/SpendMetaData.h INTICOINX/../uint256.h \
+ INTICOINX/ParamGeneration.h txdb.h txdb-leveldb.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/db.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/iterator.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/slice.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/status.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/options.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/write_batch.h \
+ init.h wallet.h ui_interface.h walletdb.h base58.h kernel.h
+main.cpp alert.h uint256.h util.h netbase.h serialize.h :
+ allocators.h version.h clientversion.h compat.h checkpoints.h net.h :
+ mruset.h protocol.h addrman.h sync.h threadsafety.h db.h main.h bignum.h :
+ script.h keystore.h crypter.h key.h scrypt.h INTICOINX/INTICOINX.h :
+ INTICOINX/../serialize.h INTICOINX/../bignum.h INTICOINX/../util.h :
+ INTICOINX/Params.h INTICOINX/Coin.h INTICOINX/Commitment.h :
+ INTICOINX/Accumulator.h INTICOINX/AccumulatorProofOfKnowledge.h :
+ INTICOINX/CoinSpend.h INTICOINX/SerialNumberSignatureOfKnowledge.h :
+ INTICOINX/SpendMetaData.h INTICOINX/../uint256.h :
+ INTICOINX/ParamGeneration.h txdb.h txdb-leveldb.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/db.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/iterator.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/slice.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/status.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/options.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/write_batch.h :
+ init.h wallet.h ui_interface.h walletdb.h base58.h kernel.h :

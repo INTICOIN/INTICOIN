@@ -1,0 +1,42 @@
+obj/txdb-leveldb.o: txdb-leveldb.cpp \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/env.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/status.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/slice.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/write_batch.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/cache.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/filter_policy.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/helpers/memenv/memenv.h \
+ kernel.h main.h bignum.h serialize.h allocators.h version.h \
+ clientversion.h uint256.h sync.h threadsafety.h net.h mruset.h netbase.h \
+ compat.h protocol.h addrman.h util.h script.h keystore.h crypter.h key.h \
+ scrypt.h INTICOINX/INTICOINX.h INTICOINX/../serialize.h \
+ INTICOINX/../bignum.h INTICOINX/../util.h INTICOINX/Params.h \
+ INTICOINX/Coin.h INTICOINX/Commitment.h INTICOINX/Accumulator.h \
+ INTICOINX/AccumulatorProofOfKnowledge.h INTICOINX/CoinSpend.h \
+ INTICOINX/SerialNumberSignatureOfKnowledge.h INTICOINX/SpendMetaData.h \
+ INTICOINX/../uint256.h INTICOINX/ParamGeneration.h checkpoints.h txdb.h \
+ txdb-leveldb.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/db.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/iterator.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/options.h
+txdb-leveldb.cpp :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/env.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/status.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/slice.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/write_batch.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/cache.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/filter_policy.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/helpers/memenv/memenv.h :
+ kernel.h main.h bignum.h serialize.h allocators.h version.h :
+ clientversion.h uint256.h sync.h threadsafety.h net.h mruset.h netbase.h :
+ compat.h protocol.h addrman.h util.h script.h keystore.h crypter.h key.h :
+ scrypt.h INTICOINX/INTICOINX.h INTICOINX/../serialize.h :
+ INTICOINX/../bignum.h INTICOINX/../util.h INTICOINX/Params.h :
+ INTICOINX/Coin.h INTICOINX/Commitment.h INTICOINX/Accumulator.h :
+ INTICOINX/AccumulatorProofOfKnowledge.h INTICOINX/CoinSpend.h :
+ INTICOINX/SerialNumberSignatureOfKnowledge.h INTICOINX/SpendMetaData.h :
+ INTICOINX/../uint256.h INTICOINX/ParamGeneration.h checkpoints.h txdb.h :
+ txdb-leveldb.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/db.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/iterator.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/leveldb/include/leveldb/options.h :
