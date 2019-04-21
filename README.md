@@ -1,24 +1,25 @@
-![INTICOIN](./src/qt/res/images/logo.png)
+![INTICOIN](./src/qt/res/images/blogpost.png)
 
 INTICOIN - INTI
 
-INTICOIN is an X11 PoW/PoS coin. It is a coin that integrated with true random super bonus block features. It uses high PoS as a way of distributing fairly the coins to community.
+INTICOIN is from some X11 PoW / PoS. It is a coin that is integrated with real functions of super extra random blocks. Your distribution of coins to the community is discreet but high POS.
 
-    X11 hash algorithm, PoW/PoS mixed
-    7 transaction confirmations
-    10 minted block confirmations
-    Total coins will be 115 millions
-    The coin will be a pure PoS coin after 1 months of PoW mining.
-    A 25% premine for bounties and to fund servers and dev expenses
+X11 hash algorithm, mixed PoW / PoS
+7 confirmations of transactions in deposits
+20 confirmations in mined POS / POW
+The total of coins will be 115 million.
+The coin will be a pure PoS currency after the 1 million block and the PoW will be eliminated.
+A 25% bonus for rewards and to finance servers and development expenses.
 
 ```
 ### POS (PROOF-OF-STAKE) Reward
 
-block 0 - 75000 = 30%
-block 75001 - 145000 = 25%
-block 145001 - 300000 = 20%
-block 300001 - 500000 = 15%
-block 500001 - forever = 5%
+block 0 - 30000 = 30%
+block 30001 - 60000 = 25%
+block 60001 - 90000 = 20%
+block 90001 - 120000 = 15%
+block 120001 - forever = 5%
+
 
 ### Max Supply raised to 115 000 000
 
