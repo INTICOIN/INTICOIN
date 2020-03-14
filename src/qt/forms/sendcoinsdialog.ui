@@ -147,8 +147,13 @@
                <colorrole role="WindowText">
                 <brush brushstyle="SolidPattern">
                  <color alpha="255">
+<<<<<<< HEAD
                   <red>85</red>
                   <green>0</green>
+=======
+                  <red>255</red>
+                  <green>255</green>
+>>>>>>> 66994d0b25792f92e7f68ac923d862dcb638c3fb
                   <blue>255</blue>
                  </color>
                 </brush>
@@ -158,8 +163,13 @@
                <colorrole role="WindowText">
                 <brush brushstyle="SolidPattern">
                  <color alpha="255">
+<<<<<<< HEAD
                   <red>85</red>
                   <green>0</green>
+=======
+                  <red>255</red>
+                  <green>255</green>
+>>>>>>> 66994d0b25792f92e7f68ac923d862dcb638c3fb
                   <blue>255</blue>
                  </color>
                 </brush>
@@ -268,8 +278,13 @@
                 <brush brushstyle="SolidPattern">
                  <color alpha="255">
                   <red>255</red>
+<<<<<<< HEAD
                   <green>0</green>
                   <blue>0</blue>
+=======
+                  <green>255</green>
+                  <blue>255</blue>
+>>>>>>> 66994d0b25792f92e7f68ac923d862dcb638c3fb
                  </color>
                 </brush>
                </colorrole>
@@ -306,8 +321,13 @@
                 <brush brushstyle="SolidPattern">
                  <color alpha="255">
                   <red>255</red>
+<<<<<<< HEAD
                   <green>0</green>
                   <blue>0</blue>
+=======
+                  <green>255</green>
+                  <blue>255</blue>
+>>>>>>> 66994d0b25792f92e7f68ac923d862dcb638c3fb
                  </color>
                 </brush>
                </colorrole>
@@ -343,9 +363,15 @@
                <colorrole role="WindowText">
                 <brush brushstyle="SolidPattern">
                  <color alpha="255">
+<<<<<<< HEAD
                   <red>255</red>
                   <green>0</green>
                   <blue>0</blue>
+=======
+                  <red>120</red>
+                  <green>120</green>
+                  <blue>120</blue>
+>>>>>>> 66994d0b25792f92e7f68ac923d862dcb638c3fb
                  </color>
                 </brush>
                </colorrole>
