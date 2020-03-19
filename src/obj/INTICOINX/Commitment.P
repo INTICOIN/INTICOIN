@@ -1,0 +1,20 @@
+obj/INTICOINX/Commitment.o: INTICOINX/Commitment.cpp \
+ INTICOINX/INTICOINX.h INTICOINX/../serialize.h INTICOINX/../allocators.h \
+ INTICOINX/../version.h INTICOINX/../clientversion.h \
+ INTICOINX/../bignum.h INTICOINX/../serialize.h INTICOINX/../uint256.h \
+ INTICOINX/../util.h INTICOINX/../netbase.h INTICOINX/../compat.h \
+ INTICOINX/Params.h INTICOINX/Coin.h INTICOINX/Commitment.h \
+ INTICOINX/Accumulator.h INTICOINX/AccumulatorProofOfKnowledge.h \
+ INTICOINX/CoinSpend.h INTICOINX/SerialNumberSignatureOfKnowledge.h \
+ INTICOINX/SpendMetaData.h INTICOINX/../uint256.h \
+ INTICOINX/ParamGeneration.h
+INTICOINX/Commitment.cpp :
+ INTICOINX/INTICOINX.h INTICOINX/../serialize.h INTICOINX/../allocators.h :
+ INTICOINX/../version.h INTICOINX/../clientversion.h :
+ INTICOINX/../bignum.h INTICOINX/../serialize.h INTICOINX/../uint256.h :
+ INTICOINX/../util.h INTICOINX/../netbase.h INTICOINX/../compat.h :
+ INTICOINX/Params.h INTICOINX/Coin.h INTICOINX/Commitment.h :
+ INTICOINX/Accumulator.h INTICOINX/AccumulatorProofOfKnowledge.h :
+ INTICOINX/CoinSpend.h INTICOINX/SerialNumberSignatureOfKnowledge.h :
+ INTICOINX/SpendMetaData.h INTICOINX/../uint256.h :
+ INTICOINX/ParamGeneration.h :
