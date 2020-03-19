@@ -1,0 +1,4 @@
+obj/version.o: version.cpp version.h clientversion.h \
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/obj/build.h
+version.cpp version.h clientversion.h :
+ /home/ubuntu/Documentos/INTICOIN_1.1.5/INTICOIN/src/obj/build.h :
