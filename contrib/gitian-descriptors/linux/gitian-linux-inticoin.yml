@@ -1,7 +1,7 @@
 ---
 name: "INTICOIN"
 suites:
-- "precise"
+- "trusty"
 architectures:
 - "i386"
 - "amd64"
@@ -37,10 +37,10 @@ script: |
   # Integrity Check
   echo "36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d  zlib-1.2.8.tar.gz"   | sha256sum -c
 
-  STAGING="$HOME/install"
+  STAGING="$HOME/build"
 
   #
-  tar xzf zlib-1.2.8.tar.gz
+  tar xzf $STAGING/zlib-1.2.8.tar.gz
   cd zlib-1.2.8
   ./configure --prefix=$STAGING
   make $MAKEOPTS install
