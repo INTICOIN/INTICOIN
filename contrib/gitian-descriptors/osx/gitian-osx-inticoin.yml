@@ -1,7 +1,7 @@
 ---
 name: "INTICOIN"
 suites:
-- "precise"
+- "trusty"
 architectures:
 - "i386"
 packages:
@@ -14,7 +14,7 @@ packages:
 
 reference_datetime: "2014-01-10 00:00:00"
 remotes:
-- "url": "https://github.com/dyoungii/test.git"
+- "url": "https://github.com/INTICOIN/INTICOIN.git"
   "dir": "INTICOIN"
 files:
 - "osx-native-depends-r3.tar.gz"
