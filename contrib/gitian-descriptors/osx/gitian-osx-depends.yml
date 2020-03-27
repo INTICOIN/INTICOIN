@@ -103,8 +103,8 @@ script: |
   popd
 
   #libminiupnpc
-  SOURCE_FILE=${SOURCES_PATH}/miniupnpc-1.9.tar.gz
-  BUILD_DIR=${BUILD_BASE}/miniupnpc-1.9
+  SOURCE_FILE=${SOURCES_PATH}/miniupnpc-1.9.20140401.tar.gz
+  BUILD_DIR=${BUILD_BASE}/miniupnpc-1.9.20140401
 
   tar -C ${BUILD_BASE} -xf ${SOURCE_FILE}
   pushd ${BUILD_DIR}

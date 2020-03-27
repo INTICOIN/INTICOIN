@@ -12,14 +12,16 @@ packages:
 reference_datetime: "2013-06-01 00:00:00"
 remotes: []
 files:
-- "qt-everywhere-opensource-src-5.2.1.tar.gz"
+- "qt-everywhere-opensource-src-4.8.5.tar.gz"
 - "osx-native-depends-r3.tar.gz"
 - "osx-depends-r4.tar.gz"
 - "MacOSX10.7.sdk.tar.gz"
+- "qtwebkit-2.3.4.tar.gz"
 
 script: |
 
-  echo "84e924181d4ad6db00239d87250cc89868484a14841f77fb85ab1f1dbdcd7da1  qt-everywhere-opensource-src-5.2.1.tar.gz" | sha256sum -c
+  echo "eb728f8268831dc4373be6403b7dd5d5dde03c169ad6882f9a8cb560df6aa138  qt-everywhere-opensource-src-4.8.5.tar.gz" | sha256sum -c
+  echo "c6cfa9d068f7eb024fee3f6c24f5b8b726997f669007587f35ed4a97d40097ca qtwebkit-2.3.4.tar.gz" | sha256sum -c
 
   REVISION=r4
   export SOURCES_PATH=`pwd`
@@ -75,9 +77,20 @@ script: |
   export PATH=`pwd`/native-prefix/bin:$PATH
   tar xf /home/ubuntu/build/osx-depends-r4.tar.gz
 
-  SOURCE_FILE=${SOURCES_PATH}/qt-everywhere-opensource-src-5.2.1.tar.gz
-  BUILD_DIR=${BUILD_BASE}/qt-everywhere-opensource-src-5.2.1
+  SOURCE_FILEx=${SOURCES_PATH}/qtwebkit-2.3.4.tar.gz
+  # BUILD_DIRx=${BUILD_BASE}/qtwebkit-2.3.4
 
+  tar -C ${BUILD_BASE} -xf ${SOURCE_FILEx}
+
+  # Install our mkspec. All files are pulled from the macx-clang spec, except for
+  # our custom qmake.conf
+  SPECFILEx=${BUILD_BASE}/Tools/Scripts/build-webkit
+  # cd ${BUILD_BASE}/Tools/qmake
+  # qmake install
+  # cat > ${SPECFILEx} <<ENDCONF
+
+  SOURCE_FILE=${SOURCES_PATH}/qt-everywhere-opensource-src-4.8.5.tar.gz
+  BUILD_DIR=${BUILD_BASE}/qt-everywhere-opensource-src-4.8.5
 
   tar -C ${BUILD_BASE} -xf ${SOURCE_FILE}
 
@@ -86,9 +99,13 @@ script: |
   SPECFILE=${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/qmake.conf
 
   mkdir -p ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux
-  cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/Info.plist.lib ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
-  cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/Info.plist.app ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
-  cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/qplatformdefs.h ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+  # cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/Info.plist.lib ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+  # cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/Info.plist.app ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+  # cp -f ${BUILD_DIR}/qtbase/mkspecs/macx-clang/qplatformdefs.h ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+
+  cp -f ${BUILD_DIR}/mkspecs/unsupported/macx-clang/Info.plist.lib ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+  cp -f ${BUILD_DIR}/mkspecs/unsupported/macx-clang/Info.plist.app ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
+  cp -f ${BUILD_DIR}/mkspecs/unsupported/macx-clang/qplatformdefs.h ${BUILD_DIR}/qtbase/mkspecs/macx-clang-linux/
 
   cat > ${SPECFILE} <<ENDCONF
 
@@ -126,24 +143,27 @@ script: |
   ENDCONF
 
   pushd ${BUILD_DIR}
-  ./configure -release -opensource -openssl-linked \
-  -no-audio-backend  -no-javascript-jit -no-sql-sqlite -no-sql-tds \
-  -no-cups -no-iconv -no-dbus -no-gif -no-audio-backend -no-freetype \
-  -no-javascript-jit -no-sql-sqlite -no-nis -no-cups -no-iconv -no-pch \
-  -no-dbus -no-gif -no-sm -nomake examples -no-feature-style-plastique \
-  -no-xcb -no-qml-debug -no-pch -no-nis \
-  -no-feature-style-cde -no-feature-style-s60 -no-feature-style-motif \
-  -no-feature-style-windowsmobile -no-feature-style-windowsce \
-  -no-feature-style-cleanlooks \
-  -no-sql-db2 -no-sql-ibase -no-sql-oci -no-sql-tds -no-sql-mysql \
-  -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 \
-  -skip qtsvg -skip qtwebkit -skip qtwebkit-examples -skip qtserialport \
-  -skip qtdeclarative -skip qtmultimedia -skip qtimageformats \
-  -skip qtlocation -skip qtsensors -skip qtquick1 -skip qtxmlpatterns \
-  -skip qtquickcontrols -skip qtactiveqt -skip qtconnectivity \
-  -skip qtwinextras -skip qtscript \
-  -prefix ${PREFIX} -bindir ${NATIVEPREFIX}/bin \
-  -confirm-license -xplatform macx-clang-linux -v ${INT_LDFLAGS}
+  # ./configure -release -opensource -openssl-linked \
+  # -no-audio-backend  -no-javascript-jit -no-sql-sqlite -no-sql-tds \
+  # -no-cups -no-iconv -no-dbus -no-gif -no-audio-backend -no-freetype \
+  # -no-javascript-jit -no-sql-sqlite -no-nis -no-cups -no-iconv -no-pch \
+  # -no-dbus -no-gif -no-sm -nomake examples -no-feature-style-plastique \
+  # -no-xcb -no-qml-debug -no-pch -no-nis \
+  # -no-feature-style-cde -no-feature-style-s60 -no-feature-style-motif \
+  # -no-feature-style-windowsmobile -no-feature-style-windowsce \
+  # -no-feature-style-cleanlooks \
+  # -no-sql-db2 -no-sql-ibase -no-sql-oci -no-sql-tds -no-sql-mysql \
+  # -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 \
+  # -skip qtsvg -skip qtwebkit -skip qtwebkit-examples -skip qtserialport \
+  # -skip qtdeclarative -skip qtmultimedia -skip qtimageformats \
+  # -skip qtlocation -skip qtsensors -skip qtquick1 -skip qtxmlpatterns \
+  # -skip qtquickcontrols -skip qtactiveqt -skip qtconnectivity \
+  # -skip qtwinextras -skip qtscript \
+  # -prefix ${PREFIX} -bindir ${NATIVEPREFIX}/bin \
+  # -confirm-license -xplatform macx-clang-linux -v ${INT_LDFLAGS}
+
+   ./configure -prefix $INSTALLPREFIX -confirm-license -release -opensource -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-declarative -no-script -no-scripttools -no-javascript-jit -no-webkit -no-svg -no-xmlpatterns -no-sql-sqlite -no-nis -no-cups -no-iconv -no-dbus -no-gif -no-libtiff -no-opengl -nomake examples -nomake demos -nomake docs
+  #
 
   # RCC's output is sorted using each file entry's hash as the key. Unfortunately,
   # the hash function uses a random seed for each run so the results aren't
@@ -181,6 +201,6 @@ script: |
   find ${PREFIX}/lib -name "*.prl" -delete
 
   export GZIP="-9n"
-  find native-prefix prefix | sort | tar --no-recursion -czf osx-depends-qt-5.2.1-${REVISION}.tar.gz -T -
+  find native-prefix prefix | sort | tar --no-recursion -czf osx-depends-qt-4.8.5-${REVISION}.tar.gz -T -
 
-  mv osx-depends-qt-5.2.1-${REVISION}.tar.gz $OUTDIR
+  mv osx-depends-qt-4.8.5-${REVISION}.tar.gz $OUTDIR
