@@ -1,5 +1,5 @@
 ---
-name: "INTICOIN"
+name: "INTICOIN-linux"
 suites:
 - "trusty"
 architectures:
@@ -30,29 +30,17 @@ files:
 - "bitcoin-deps-linux64-gitian-r6.zip"
 - "boost-linux32-1.55.0-gitian-r1.zip"
 - "boost-linux64-1.55.0-gitian-r1.zip"
-<<<<<<< HEAD
 - "qt-linux32-4.8.5-gitian-r1.tar.gz"
 - "qt-linux64-4.8.5-gitian-r1.tar.gz"
-=======
-- "qt-linux32-4.6.4-gitian-r1.tar.gz"
-- "qt-linux64-4.6.4-gitian-r1.tar.gz"
->>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
 - "zlib-1.2.8.tar.gz"
 script: |
   # Integrity Check
   echo "36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d  zlib-1.2.8.tar.gz"   | sha256sum -c
 
-<<<<<<< HEAD
-  STAGING="$HOME/install"
-
-  #
-  tar xzf zlib-1.2.8.tar.gz
-=======
   STAGING="$HOME/build"
 
   #
   tar xzf $STAGING/zlib-1.2.8.tar.gz
->>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   cd zlib-1.2.8
   ./configure --prefix=$STAGING
   make $MAKEOPTS install
