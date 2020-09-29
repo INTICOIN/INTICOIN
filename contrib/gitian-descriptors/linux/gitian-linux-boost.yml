@@ -19,7 +19,7 @@ remotes: []
 files:
 - "boost_1_55_0.tar.bz2"
 script: |
-  STAGING="$HOME/install"
+  STAGING="$HOME/build"
   TEMPDIR="$HOME/tmp"
   export LIBRARY_PATH="$STAGING/lib"
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
