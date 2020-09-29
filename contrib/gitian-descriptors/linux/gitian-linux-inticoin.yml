@@ -40,7 +40,7 @@ script: |
   STAGING="$HOME/build"
 
   #
-  tar xzf $STAGING/zlib-1.2.8.tar.gz
+  tar xzf zlib-1.2.8.tar.gz
   cd zlib-1.2.8
   ./configure --prefix=$STAGING
   make $MAKEOPTS install
