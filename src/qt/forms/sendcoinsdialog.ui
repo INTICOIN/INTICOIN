@@ -10,6 +10,7 @@
     <height>400</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>Send Coins</string>
   </property>
@@ -141,6 +144,7 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+<<<<<<< HEAD
             <property name="palette">
              <palette>
               <active>
@@ -198,6 +202,8 @@
               </disabled>
              </palette>
             </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
             <property name="font">
              <font>
               <weight>75</weight>
@@ -234,6 +240,7 @@
           </item>
           <item>
            <widget class="QLabel" name="labelCoinControlAutomaticallySelected">
+<<<<<<< HEAD
             <property name="palette">
              <palette>
               <active>
@@ -271,6 +278,8 @@
               </disabled>
              </palette>
             </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
             <property name="text">
              <string>automatically selected</string>
             </property>
@@ -281,6 +290,7 @@
           </item>
           <item>
            <widget class="QLabel" name="labelCoinControlInsuffFunds">
+<<<<<<< HEAD
             <property name="palette">
              <palette>
               <active>
@@ -431,6 +441,8 @@
               </disabled>
              </palette>
             </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
             <property name="font">
              <font>
               <weight>75</weight>
@@ -523,6 +535,7 @@
                </property>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlQuantityText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -560,6 +573,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -598,6 +613,7 @@
                </item>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlBytesText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -635,6 +651,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -686,6 +704,7 @@
                </property>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlAmountText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -723,6 +742,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -736,6 +757,7 @@
                </item>
                <item row="0" column="1">
                 <widget class="QLabel" name="labelCoinControlAmount">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -773,6 +795,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -795,6 +819,7 @@
                </item>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlPriorityText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -832,6 +857,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -842,6 +869,7 @@
                </item>
                <item row="1" column="1">
                 <widget class="QLabel" name="labelCoinControlPriority">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -879,6 +907,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -920,6 +950,7 @@
                </property>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlFeeText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -957,6 +988,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -970,6 +1003,7 @@
                </item>
                <item row="0" column="1">
                 <widget class="QLabel" name="labelCoinControlFee">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1007,6 +1041,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -1029,6 +1065,7 @@
                </item>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlLowOutputText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1066,6 +1103,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -1076,6 +1115,7 @@
                </item>
                <item row="1" column="1">
                 <widget class="QLabel" name="labelCoinControlLowOutput">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1113,6 +1153,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -1154,6 +1196,7 @@
                </property>
                <item row="0" column="0">
                 <widget class="QLabel" name="labelCoinControlAfterFeeText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1191,6 +1234,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -1204,6 +1249,7 @@
                </item>
                <item row="0" column="1">
                 <widget class="QLabel" name="labelCoinControlAfterFee">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1241,6 +1287,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -1263,6 +1311,7 @@
                </item>
                <item row="1" column="0">
                 <widget class="QLabel" name="labelCoinControlChangeText">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1300,6 +1349,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="styleSheet">
                   <string notr="true">font-weight:bold;</string>
                  </property>
@@ -1310,6 +1361,7 @@
                </item>
                <item row="1" column="1">
                 <widget class="QLabel" name="labelCoinControlChange">
+<<<<<<< HEAD
                  <property name="palette">
                   <palette>
                    <active>
@@ -1347,6 +1399,8 @@
                    </disabled>
                   </palette>
                  </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
                  <property name="font">
                   <font>
                    <family>Monospace</family>
@@ -1390,6 +1444,7 @@
           </property>
           <item>
            <widget class="QCheckBox" name="checkBoxCoinControlChange">
+<<<<<<< HEAD
             <property name="palette">
              <palette>
               <active>
@@ -1427,6 +1482,8 @@
               </disabled>
              </palette>
             </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
             <property name="text">
              <string>custom change address</string>
             </property>
@@ -1489,6 +1546,7 @@
    </item>
    <item>
     <widget class="QScrollArea" name="scrollArea">
+<<<<<<< HEAD
      <property name="palette">
       <palette>
        <active>
@@ -1526,6 +1584,8 @@
        </disabled>
       </palette>
      </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
      <property name="widgetResizable">
       <bool>true</bool>
      </property>

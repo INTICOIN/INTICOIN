@@ -10,6 +10,7 @@
     <height>250</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>Transaction details</string>
   </property>
@@ -90,6 +93,7 @@
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
+<<<<<<< HEAD
      <property name="palette">
       <palette>
        <active>
@@ -127,6 +131,8 @@
        </disabled>
       </palette>
      </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>

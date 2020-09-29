@@ -10,6 +10,7 @@
     <height>126</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>Edit Address</string>
   </property>
@@ -85,6 +88,7 @@
      </property>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
+<<<<<<< HEAD
        <property name="palette">
         <palette>
          <active>
@@ -122,6 +126,8 @@
          </disabled>
         </palette>
        </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="text">
         <string>&amp;Label</string>
        </property>
@@ -139,6 +145,7 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
+<<<<<<< HEAD
        <property name="palette">
         <palette>
          <active>
@@ -176,6 +183,8 @@
          </disabled>
         </palette>
        </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="text">
         <string>&amp;Address</string>
        </property>

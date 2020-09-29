@@ -10,6 +10,7 @@
     <height>530</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>QR Code Dialog</string>
   </property>
@@ -133,6 +136,7 @@
         <property name="enabled">
          <bool>true</bool>
         </property>
+<<<<<<< HEAD
         <property name="palette">
          <palette>
           <active>
@@ -170,6 +174,8 @@
           </disabled>
          </palette>
         </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
         <property name="text">
          <string>Request Payment</string>
         </property>
@@ -182,6 +188,7 @@
         </property>
         <item row="1" column="0">
          <widget class="QLabel" name="lblLabel">
+<<<<<<< HEAD
           <property name="palette">
            <palette>
             <active>
@@ -219,6 +226,8 @@
             </disabled>
            </palette>
           </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
           <property name="text">
            <string>Label:</string>
           </property>
@@ -238,6 +247,7 @@
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="lblMessage">
+<<<<<<< HEAD
           <property name="palette">
            <palette>
             <active>
@@ -275,6 +285,8 @@
             </disabled>
            </palette>
           </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
           <property name="text">
            <string>Message:</string>
           </property>
@@ -300,6 +312,7 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+<<<<<<< HEAD
           <property name="palette">
            <palette>
             <active>
@@ -337,6 +350,8 @@
             </disabled>
            </palette>
           </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
           <property name="text">
            <string>Amount:</string>
           </property>

@@ -1,7 +1,11 @@
 ---
 name: "INTICOIN"
 suites:
+<<<<<<< HEAD
 - "precise"
+=======
+- "trusty"
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
 architectures:
 - "i386"
 packages:
@@ -14,7 +18,11 @@ packages:
 
 reference_datetime: "2014-01-10 00:00:00"
 remotes:
+<<<<<<< HEAD
 - "url": "https://github.com/dyoungii/test.git"
+=======
+- "url": "https://github.com/INTICOIN/INTICOIN.git"
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   "dir": "INTICOIN"
 files:
 - "osx-native-depends-r3.tar.gz"

@@ -10,6 +10,7 @@
     <height>380</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,12 +75,15 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>Address Book</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="labelExplanation">
+<<<<<<< HEAD
      <property name="palette">
       <palette>
        <active>
@@ -117,6 +121,8 @@
        </disabled>
       </palette>
      </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
      <property name="text">
       <string>These are your INTICOIN addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</string>
      </property>

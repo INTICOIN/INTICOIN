@@ -10,6 +10,7 @@
     <height>500</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>Coin Control</string>
   </property>
@@ -102,6 +105,7 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlQuantityText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -139,6 +143,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -149,6 +155,7 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlQuantity">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -186,6 +193,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -208,6 +217,7 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlBytesText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -245,6 +255,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -255,6 +267,7 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlBytes">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -292,6 +305,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -330,6 +345,7 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAmountText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -367,6 +383,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -377,6 +395,7 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAmount">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -414,6 +433,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -436,6 +457,7 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlPriorityText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -473,6 +495,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -483,6 +507,7 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlPriority">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -520,6 +545,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -558,6 +585,7 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlFeeText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -595,6 +623,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -605,6 +635,7 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlFee">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -642,6 +673,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -667,6 +700,7 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -704,6 +738,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -717,6 +753,7 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -754,6 +791,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -792,6 +831,7 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAfterFeeText">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -829,6 +869,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -839,6 +881,7 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAfterFee">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -876,6 +919,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -901,6 +946,7 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -938,6 +984,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
          </property>
@@ -951,6 +999,7 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -988,6 +1037,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="font">
           <font>
            <family>Monospace</family>
@@ -1035,7 +1086,11 @@
         <height>41</height>
        </rect>
       </property>
+<<<<<<< HEAD
       <layout class="QHBoxLayout" name="horizontalLayoutPanel" stretch="0,0,0,0">
+=======
+      <layout class="QHBoxLayout" name="horizontalLayoutPanel" stretch="0,0,0,0,0">
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="spacing">
         <number>14</number>
        </property>
@@ -1060,6 +1115,7 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -1097,6 +1153,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="text">
           <string>Tree mode</string>
          </property>
@@ -1113,6 +1171,7 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -1150,6 +1209,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="text">
           <string>List mode</string>
          </property>

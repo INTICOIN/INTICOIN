@@ -10,6 +10,7 @@
     <height>319</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="palette">
    <palette>
     <active>
@@ -74,6 +75,8 @@
     </disabled>
    </palette>
   </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
   <property name="windowTitle">
    <string>About INTICOIN</string>
   </property>
@@ -95,6 +98,7 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <spacer name="verticalSpacer_2">
+<<<<<<< HEAD
        <property name="palette">
         <palette>
          <active>
@@ -132,6 +136,8 @@
          </disabled>
         </palette>
        </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -147,6 +153,7 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="label">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -184,6 +191,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -197,6 +206,7 @@
        </item>
        <item>
         <widget class="QLabel" name="versionLabel">
+<<<<<<< HEAD
          <property name="palette">
           <palette>
            <active>
@@ -234,6 +244,8 @@
            </disabled>
           </palette>
          </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -262,6 +274,7 @@
      </item>
      <item>
       <widget class="QLabel" name="copyrightLabel">
+<<<<<<< HEAD
        <property name="palette">
         <palette>
          <active>
@@ -299,6 +312,8 @@
          </disabled>
         </palette>
        </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
@@ -314,6 +329,7 @@ Copyright © 2018 The INTICOIN developers</string>
      </item>
      <item>
       <widget class="QLabel" name="label_2">
+<<<<<<< HEAD
        <property name="palette">
         <palette>
          <active>
@@ -351,6 +367,8 @@ Copyright © 2018 The INTICOIN developers</string>
          </disabled>
         </palette>
        </property>
+=======
+>>>>>>> ce6b3e930640a8b64bf9036fece420e37d96eedf
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
