@@ -22,7 +22,11 @@ script: |
   STAGING="$HOME/build"
   TEMPDIR="$HOME/tmp"
   export LIBRARY_PATH="$STAGING/lib"
-  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  if [ "$GBUILD_BITS" == "32" ]; then
+    export LD_PRELOAD=/usr/lib/i386-linux-gnu/faketime/libfaketime.so.1;
+  else
+    export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1;
+  fi
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
   # Input Integrity Check

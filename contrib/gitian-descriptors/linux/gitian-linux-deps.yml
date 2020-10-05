@@ -25,7 +25,11 @@ script: |
   STAGING="$HOME/build"
   TEMPDIR="$HOME/tmp"
   OPTFLAGS='-O2'
-  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  if [ "$GBUILD_BITS" == "32" ]; then
+    export LD_PRELOAD=/usr/lib/i386-linux-gnu/faketime/libfaketime.so.1;
+  else
+    export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1;
+  fi
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
   export LIBRARY_PATH="$STAGING/lib"
@@ -36,7 +40,7 @@ script: |
   echo "dfd71487513c871bad485806bfd1fdb304dedc84d2b01a8fb8e0940b50597a98  qrencode-3.4.3.tar.bz2" | sha256sum -c
   echo "13bfc5ae543cf3aa180ac2485c0bc89495e3ae711fc6fab4f8ffe90dfb4bb677  protobuf-2.5.0.tar.bz2" | sha256sum -c
   echo "12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  db-4.8.30.NC.tar.gz"    | sha256sum -c
-
+  mkdir -p "$STAGING"
   #
   tar xzf $STAGING/openssl-1.0.1h.tar.gz
   cd openssl-1.0.1h
