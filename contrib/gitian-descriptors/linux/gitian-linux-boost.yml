@@ -55,7 +55,7 @@ script: |
   ;" > user-config.jam
 
   ./bootstrap.sh --without-icu
-  patch -p0 < $INDIR/boost-mingw-gas-cross-compile-2013-03-03.patch
+  # patch -p0 < $INDIR/boost-mingw-gas-cross-compile-2013-03-03.patch
 
   ./bjam toolset=gcc threadapi=pthread threading=multi variant=release link=static runtime-link=shared --user-config=user-config.jam --without-mpi --without-python -sNO_BZIP2=1 --layout=tagged --build-type=complete --prefix="$INSTALLPREFIX" $MAKEOPTS -d+2 install
 
