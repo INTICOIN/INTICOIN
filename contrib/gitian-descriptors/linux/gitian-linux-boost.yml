@@ -27,47 +27,25 @@ script: |
   export TZ=UTC
   # Input Integrity Check
   echo "fff00023dd79486d444c8e29922f4072e1d451fc5a4d2b6075852ead7f2b7b52  boost_1_55_0.tar.bz2" | shasum -c
-
-  for BITS in 32 64; do # for architectures
-  #
-    INSTALLPREFIX=$HOME/staging${BITS}
-    BUILDDIR=$HOME/build${BITS}
-    if [ "$BITS" == "32" ]; then
-      HOST=i686-w64-mingw32
-    else
-      HOST=x86_64-w64-mingw32
-    fi
-    #
-    mkdir -p $INSTALLPREFIX $BUILDDIR
-    cd $BUILDDIR
-    # mkdir -p "$STAGING"
-
+  mkdir -p "$STAGING"
   tar --warning=no-timestamp -xjf $STAGING/boost_1_55_0.tar.bz2
   cd boost_1_55_0
   GCCVERSION=$(g++ -E -dM $(mktemp --suffix=.h) | grep __VERSION__ | cut -d ' ' -f 3 | cut -d '"' -f 2)
   # note: bjam with -d+2 reveals that -O3 is implied by default, no need to provide it in cxxflags
-  echo "using gcc : $GCCVERSION : $HOST-g++
+  echo "using gcc : $GCCVERSION : g++
         :
-        <rc>$HOST-windres
-        <archiver>$HOST-ar
-        <cxxflags>-frandom-seed=boost1
-        <ranlib>$HOST-ranlib
+        <cxxflags>\"-frandom-seed=boost1 -fPIC\"
   ;" > user-config.jam
-
   ./bootstrap.sh --without-icu
-  # patch -p0 < $INDIR/boost-mingw-gas-cross-compile-2013-03-03.patch
-
-  ./bjam toolset=gcc threadapi=pthread threading=multi variant=release link=static runtime-link=shared --user-config=user-config.jam --without-mpi --without-python -sNO_BZIP2=1 --layout=tagged --build-type=complete --prefix="$INSTALLPREFIX" $MAKEOPTS -d+2 install
-
+  ./bjam toolset=gcc threadapi=pthread threading=multi variant=release link=static runtime-link=shared --user-config=user-config.jam --without-mpi --without-python -sNO_BZIP2=1 --layout=tagged --build-type=complete --prefix="$STAGING" $MAKEOPTS -d+2 install
   # post-process all generated libraries to be deterministic
   # extract them to a temporary directory then re-build them deterministically
   for LIB in $(find $STAGING -name \*.a); do
     rm -rf $TEMPDIR && mkdir $TEMPDIR && cd $TEMPDIR
-    $HOST-ar xv $LIB | cut -b5- > /tmp/list.txt
+    ar xv $LIB | cut -b5- > /tmp/list.txt
     rm $LIB
-    $HOST-ar crsD $LIB $(cat /tmp/list.txt)
+    ar crsD $LIB $(cat /tmp/list.txt)
   done
   #
-  cd "$INSTALLPREFIX"
-  find | sort | zip -X@ $OUTDIR/boost-linux$BITS-1.55.0-gitian-r1.zip
-  done # for BITS in
+  cd "$STAGING"
+  find | sort | zip -X@ $OUTDIR/boost-linux${GBUILD_BITS}-1.55.0-gitian-r1.zip
