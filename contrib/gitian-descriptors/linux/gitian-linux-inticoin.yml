@@ -58,7 +58,7 @@ script: |
   cd $STAGING
   unzip bitcoin-deps-linux${GBUILD_BITS}-gitian-r6.zip
   unzip boost-linux${GBUILD_BITS}-1.55.0-gitian-r1.zip
-  tar -zxf qt-linux${GBUILD_BITS}-4.6.4-gitian-r1.tar.gz
+  tar -zxf qt-linux${GBUILD_BITS}-4.8.5-gitian-r1.tar.gz
   cd ../build
 
   # Avoid exporting *any* symbols from the executable
@@ -84,7 +84,7 @@ script: |
   # (with static linking to boost and openssl as well a some non-OS deps)
   mkdir -p distsrc
   cd distsrc
-  tar --strip-components=1 -xf ../$DISTNAME
+  tar --strip-components=1 -xf $HOME/build/INTICOIN/$DISTNAME
   cd src
   make -f makefile.unix STATIC=1 OPENSSL_INCLUDE_PATH="$STAGING/include" OPENSSL_LIB_PATH="$STAGING/lib" $MAKEOPTS INTICOINd USE_UPNP=0 DEBUGFLAGS= USE_SSE2=1 BOOST_LIB_SUFFIX=-mt
   mkdir -p $OUTDIR/bin/$GBUILD_BITS
