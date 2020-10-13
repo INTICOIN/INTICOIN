@@ -102,7 +102,8 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
-INCLUDEPATH += src/leveldb/include src/leveldb/helpers
+INCLUDEPATH += src/leveldb/include src/leveldb/helpers 
+# C:\INTICOIN\db-4.8.30.NC\build_unix -correlativo a includepath
 LIBS += src/leveldb/libleveldb.a src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp
 !win32 {
@@ -387,7 +388,7 @@ isEmpty(BOOST_THREAD_LIB_SUFFIX) {
 
 isEmpty(BDB_LIB_PATH) {
     macx:BDB_LIB_PATH = /opt/local/lib/db48
-    windows:BDB_LIB_PATH = C:\INTICOIN\db-4.8.30.NC\build_unix
+    # windows:BDB_LIB_PATH = C:\INTICOIN\db-4.8.30.NC\build_unix
 }
 
 isEmpty(BDB_LIB_SUFFIX) {
@@ -397,37 +398,37 @@ isEmpty(BDB_LIB_SUFFIX) {
 
 isEmpty(BDB_INCLUDE_PATH) {
     macx:BDB_INCLUDE_PATH = /opt/local/include/db48
-    windows:BDB_INCLUDE_PATH = C:\INTICOIN\db-4.8.30.NC\build_unix
+    # windows:BDB_INCLUDE_PATH = C:\INTICOIN\db-4.8.30.NC\build_unix
 }
 
 isEmpty(OPENSSL_LIB_PATH) {
     macx:OPENSSL_LIB_PATH = /opt/local/lib
-    windows:OPENSSL_LIB_PATH = C:\INTICOIN\openssl-1.0.1k
+    # windows:OPENSSL_LIB_PATH = C:\INTICOIN\openssl-1.0.1k
 }
 
 isEmpty(OPENSSL_INCLUDE_PATH) {
     macx:OPENSSL_INCLUDE_PATH = /opt/local/include/openssl
-    windows:OPENSSL_INCLUDE_PATH = C:\INTICOIN\openssl-1.0.1k\include
+    # windows:OPENSSL_INCLUDE_PATH = C:\INTICOIN\openssl-1.0.1k\include
 }
 
 isEmpty(BOOST_LIB_PATH) {
     macx:BOOST_LIB_PATH = /opt/local/lib
-    windows:BOOST_LIB_PATH = C:\INTICOIN\boost_1_55_0\boost_1_55_0\stage\lib
+    # windows:BOOST_LIB_PATH = C:\INTICOIN\boost_1_55_0\boost_1_55_0\stage\lib
 }
 
 isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
-    windows:BOOST_INCLUDE_PATH = C:\INTICOIN\boost_1_55_0\boost_1_55_0
+    # windows:BOOST_INCLUDE_PATH = C:\INTICOIN\boost_1_55_0\boost_1_55_0
 }
 
 isEmpty(MINIUPNPC_LIB_PATH) {
     macx:MINIUPNPC_LIB_PATH=/opt/local/lib
-    windows:MINIUPNPC_LIB_PATH = C:\INTICOIN\miniupnpc
+    # windows:MINIUPNPC_LIB_PATH = C:\INTICOIN\miniupnpc
 }
 
 isEmpty(MINIUPNPC_INCLUDE_PATH) {
     macx:MINIUPNPC_INCLUDE_PATH=/opt/local/include/miniupnpc
-    windows:MINIUPNPC_INCLUDE_PATH = C:\INTICOIN\miniupnpc
+    # windows:MINIUPNPC_INCLUDE_PATH = C:\INTICOIN\miniupnpc
 }
 
 windows:DEFINES += WIN32
