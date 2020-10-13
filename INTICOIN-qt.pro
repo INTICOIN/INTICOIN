@@ -102,7 +102,7 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
-INCLUDEPATH += src/leveldb/include src/leveldb/helpers C:\INTICOIN\db-4.8.30.NC\build_unix
+INCLUDEPATH += src/leveldb/include src/leveldb/helpers
 LIBS += src/leveldb/libleveldb.a src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp
 !win32 {
