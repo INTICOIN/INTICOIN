@@ -10,8 +10,7 @@
     <height>500</height>
    </rect>
   </property>
-<<<<<<< HEAD
-  <property name="palette">
+  <property> name="palette">
    <palette>
     <active>
      <colorrole role="Base">
